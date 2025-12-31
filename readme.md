@@ -4,7 +4,11 @@ AI-Powered Protection Against Manipulative Web Design
 The Dark Pattern Hunter is a browser extension that uses a fine-tuned Large Language Model (LLM) to detect and highlight "Dark Patterns" in real-time. It analyzes the semantic meaning of web content to flag manipulative UI elements like Urgency, Scarcity, Social Proof, and Hidden Costs.
 
 🎥 Demo
-![Dark Pattern Hunter Demo]([Insert Link to GIF or Screenshot of your index.html here]) Above: The extension detecting "Fake Urgency" and "Hidden Costs" on a demo e-commerce site.
+
+
+https://github.com/user-attachments/assets/9a62001d-302a-4376-8852-e005d78cd233
+
+ Above: The extension detecting "Fake Urgency" and "Hidden Costs" on a demo e-commerce site.
 
 🚀 Features
 Real-Time Analysis: Scrapes visible text from the DOM and processes it instantly.
