@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudTrap - The Ultimate Stress Test</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --danger: #ef4444;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            background: #fff;
+        }
+        
+        /* Layout Utilities */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 60px 0; border-bottom: 1px solid #e2e8f0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        
+        /* Typography */
+        h1, h2, h3 { line-height: 1.2; margin-bottom: 1rem; }
+        h1 { font-size: 3rem; font-weight: 800; }
+        .badge { background: var(--danger); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+        
+        /* Components */
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        .card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; background: white; }
+        .price-tag { font-size: 2.5rem; font-weight: bold; color: var(--dark); }
+        .fine-print { font-size: 0.75rem; color: #94a3b8; margin-top: 10px; }
+        
+        /* Visual Guide for the Tester */
+        .guide-box {
+            background: #f0f9ff; border: 1px solid #bae6fd; padding: 15px; margin-bottom: 30px; border-radius: 8px; font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="border-bottom: 1px solid #eee; padding: 20px 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-weight: bold; font-size: 1.2rem;">CloudTrap</div>
+            <div style="color: #64748b; font-size: 0.9rem;">
+                <span>Features</span> &nbsp; <span>Documentation</span> &nbsp; <span>About Us</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="guide-box">
+            <strong>🧪 Analysis Guide:</strong><br>
+            - Text that is <span style="color:green">Safe</span> should remain normal.<br>
+            - Text that is <span style="color:red">Dark/Manipulative</span> should get a RED border.<br>
+            - Scroll down to test Urgency, Scarcity, Social Proof, and Hidden Costs.
+        </div>
+    </div>
+
+    <section class="section" style="background: #fdf2f2;">
+        <div class="container" style="text-align: center;">
+            <span class="badge">Urgency Detected</span>
+            <h1>Stop! This Offer Expires Soon!</h1>
+            
+            <p style="font-size: 1.25rem; font-weight: bold; color: var(--danger);">
+                ⚠️ You only have 04:59 minutes left to claim this discount!
+            </p>
+            
+            <p>Don't let this opportunity slip away. Lock in your price now before it increases.</p>
+            <a href="#" class="btn">Claim Offer Now</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="grid">
+                
+                <div class="card" style="border-top: 4px solid #22c55e;">
+                    <h3>Standard Plan</h3>
+                    <p class="price-tag">$10<span style="font-size: 1rem; color:#666">/mo</span></p>
+                    
+                    <p>This plan includes 5GB of cloud storage and basic email support. You can upgrade or downgrade at any time from your dashboard.</p>
+                    <ul style="color: #475569;">
+                        <li>5GB Storage</li>
+                        <li>Email Support</li>
+                        <li>Weekly Backups</li>
+                    </ul>
+                    <a href="#" class="btn" style="background: #22c55e;">Select Standard</a>
+                </div>
+
+                <div class="card" style="border-top: 4px solid #ef4444;">
+                    <h3>Premium Plan</h3>
+                    <p class="price-tag">$29<span style="font-size: 1rem; color:#666">/mo</span></p>
+                    
+                    <p style="color: var(--danger); font-weight: bold;">
+                        🔥 Only 2 spots left at this price!
+                    </p>
+                    
+                    <p style="font-style: italic;">
+                        148 people are viewing this plan right now.
+                    </p>
+                    
+                    <p>High demand! 12 people purchased this in the last hour.</p>
+                    <a href="#" class="btn" style="background: #ef4444;">Select Premium</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Checkout Details</h2>
+            <p>Review your order summary below.</p>
+            
+            <div class="card" style="background: #f8fafc;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Subtotal</span>
+                    <span>$29.00</span>
+                </div>
+                
+                <div class="fine-print">
+                    *Final price includes a mandatory $15.00 "Convenience Fee", a $5.00 "Server Maintenance Surcharge", and an automatically recurring $10.00 "Priority Support" subscription that cannot be removed.
+                </div>
+                
+                <hr>
+                <div style="display: flex; justify-content: space-between; font-weight: bold; margin-top: 15px;">
+                    <span>Total Charge</span>
+                    <span>$59.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="text-align: center;">
+        <div class="container">
+            <h3>Want 20% Off?</h3>
+            <p>Join our newsletter to get the best deals delivered to your inbox.</p>
+            
+            <a href="#" class="btn">Yes, I want to save money</a>
+            <br><br>
+            
+            <a href="#" style="color: #94a3b8; font-size: 0.8rem; text-decoration: underline;">
+                No thanks, I prefer to pay full price and lose money.
+            </a>
+        </div>
+    </section>
+
+    <footer class="section" style="background: var(--dark); color: #94a3b8; padding: 40px 0;">
+        <div class="container">
+            <h4>Account Management</h4>
+            
+            <p>CloudTrap Inc. 2024. All rights reserved.</p>
+            
+            <p style="font-size: 0.7rem; margin-top: 20px;">
+                To delete your account, you must download Form 12-B, notarize it, and mail it to our headquarters in Antarctica. Online cancellation is not available at this time.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

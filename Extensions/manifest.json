@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Pattern Hunter",
+  "version": "1.0",
+  "description": "Detects manipulative UI patterns on websites using AI.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
